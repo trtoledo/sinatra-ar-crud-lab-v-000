@@ -1,0 +1,16 @@
+
+    <!-- <% @posts.all.each do |post| %>
+  <ul>
+    <li> <%= post.name %> </li>
+    <li> <%= post.content %> </li>
+    <li> <%= post.id %> </li>
+  </ul>
+    <% end %> -->
+
+
+
+    <h1>POSTS!</h1>
+    <%=@posts.all.each do |post|%>
+    <h2>Post Name: <%=post[:name] %></h2>
+    <p>Content: <%= post[:content] %></p>
+      <% end %>
